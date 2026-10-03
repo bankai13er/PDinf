@@ -5,7 +5,7 @@
 }
 
 body {
-    background-image: url('start.png');
+    background-image: url('img/start.png')
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
