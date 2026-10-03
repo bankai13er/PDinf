@@ -5,7 +5,7 @@
 }
 
 body {
-  background-image: url('part2.png');
+  background-image: url('img/part2.png')
   background-size: 100% 100vh; /* 100% ширины, но всего 80% высоты экрана */
   background-position: center;
   background-repeat: no-repeat;
