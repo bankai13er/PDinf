@@ -17,7 +17,7 @@ if (infoBtn) {
 
 if (habBtn) {
     startBtn.addEventListener('click', function() {
-        window.location.href='index.html'
+        window.location.href = 'main1.html';
     });
 }
 
@@ -29,13 +29,13 @@ if (startBtn) {
 
 if (hab1Btn) {
     hab1Btn.addEventListener('click', function() {
-        window.location.href='index.html'
+        window.location.href = 'main1.html';
     });
 }
 
 if (hab2Btn) {
     hab2Btn.addEventListener('click', function() {
-        window.location.href='index.html'
+        window.location.href = 'main1.html';
     });
 }
 
@@ -53,7 +53,7 @@ if (part2Btn) {
 
 if (hab3Btn) {
     hab3Btn.addEventListener('click', function() {
-        window.location.href='index.html'
+        window.location.href = 'main1.html';
     });
 }
 
