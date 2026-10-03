@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+    background-image: url('hab.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+
+
+
+
+.par {
+position: fixed; /* Используем fixed, чтобы панель всегда прилипала к левому краю */
+    top: 0;
+    left: 0;
+
+    /* 1. Увеличиваем ширину блока, чтобы в него поместился срез на 850px */
+    width: 850px;
+    height: 100vh;
+    background: linear-gradient(135deg, rgb(66 135 172 / 0.14), rgb(4 73 225 / 0.02));
+
+    /* 2. Обрезка: верхняя грань 700px, нижняя вылетает до 850px */
+    clip-path: polygon(0 0, 700px 0, 850px 100%, 0 100%);
+}
+
+/* 1. Добавили точку перед b, так как это класс (.b) */
+.b {
+    background: linear-gradient(to bottom, rgb(0 0 128 / 0.56), rgb(128 128 128 / 0.29));
+    color: white; /* Изменили на белый, так как на темно-синем фоне черный текст не видно */
+    width: 550px; /* 2. Исправили опечатку wight -> width */
+    height: 80px;
+    margin-top: 100px;
+    margin-left: 60px;
+    font-family: "Arial", sans-serif;
+    border: none; /* Убираем стандартную серую рамку кнопки */
+    border-radius: 5px; /* Немного закруглим углы для красоты */
+    cursor: pointer; /* Чтобы при наведении появлялся палец */
+
+    transition: all 0.3s ease;
+    box-shadow: 0 0 0 rgba(138, 43, 226, 0);
+}
+
+.b:hover {
+    background: linear-gradient(135deg, rgb(0 0 203 / 0.36), rgb(138 43 226 / 0.37));
+    box-shadow: 0 0 15px #8a2be2, 0 0 #0000ff;
+    transform: translateY(-2px);
+}
+.b:active {
+    transform: translateY(1px) scale(0.93);
+    box-shadow: 0 0 5px #8a2be2, 0 0 10px #0000ff, inset 0 0 10px rgba(255,255,255,0.5);
+    transition: all 0.05s ease;
+}
+
+.c {
+    background: linear-gradient(to bottom, rgb(81 97 92 / 0.34), rgb(167 184 190 / 0.3));
+    color: white; /* Изменили на белый, так как на темно-синем фоне черный текст не видно */
+    width: 550px; /* 2. Исправили опечатку wight -> width */
+    height: 80px;
+    margin-top: 120px;
+    margin-left: 60px;
+    font-family: "Arial", sans-serif;
+    border: none; /* Убираем стандартную серую рамку кнопки */
+    border-radius: 5px; /* Немного закруглим углы для красоты */
+    cursor: pointer; /* Чтобы при наведении появлялся палец */
+
+    transition: all 0.3s ease;
+    box-shadow: 0 0 0 rgba(138, 43, 226, 0);
+}
+
+.c:hover {
+    background: linear-gradient(135deg, rgb(167 184 190 / 0.51), rgb(216 216 198 / 0.53));
+    box-shadow: 0 0 15px rgb(216 209 198 / 0.62), 0 0 rgb(167 184 190 / 0.59);
+    transform: translateY(-2px);
+}
+.c:active {
+    transform: translateY(1px) scale(0.93);
+    box-shadow: 0 0 5px #8a2be2, 0 0 10px #0000ff, inset 0 0 10px rgba(255,255,255,0.5);
+    transition: all 0.05s ease;
+}
+
+.i {
+    background: linear-gradient(to bottom, rgb(97 122 139 / 0.51), rgb(230 60 52 / 0.66));
+    color: white; /* Изменили на белый, так как на темно-синем фоне черный текст не видно */
+    width: 550px; /* 2. Исправили опечатку wight -> width */
+    height: 80px;
+    margin-top: 120px;
+    margin-left: 60px;
+    font-family: "Arial", sans-serif;
+    border: none; /* Убираем стандартную серую рамку кнопки */
+    border-radius: 5px; /* Немного закруглим углы для красоты */
+    cursor: pointer; /* Чтобы при наведении появлялся палец */
+
+    transition: all 0.3s ease;
+    box-shadow: 0 0 0 rgba(138, 43, 226, 0);
+}
+
+.i:hover {
+    background: linear-gradient(135deg, #a7b8be, #617a8b);
+    box-shadow: 0 0 15px #617a8b, 0 0 #a7b8be;
+    transform: translateY(-2px);
+}
+.i:active {
+    transform: translateY(1px) scale(0.93);
+    box-shadow: 0 0 5px #8a2be2, 0 0 10px #0000ff, inset 0 0 10px rgba(255,255,255,0.5);
+    transition: all 0.05s ease;
+}
+
+
+.h {
+    background: linear-gradient(90deg, #0b0105, #2c1b48);
+    color: white; /* Изменили на белый, так как на темно-синем фоне черный текст не видно */
+    width: 600px; /* 2. Исправили опечатку wight -> width */
+    height: 400px;
+    margin-top: 120px;
+    margin-left: 60px;
+    font-family: "Arial", sans-serif;
+    border: none; /* Убираем стандартную серую рамку кнопки */
+    border-radius: 5px; /* Немного закруглим углы для красоты */
+    cursor: pointer; /* Чтобы при наведении появлялся палец */
+
+    transition: all 0.3s ease;
+    box-shadow: 0 0 0 rgba(138, 43, 226, 0);
+}
+
+.h:hover {
+    background: linear-gradient(135deg, #714c9c, #93569e);
+    box-shadow: 0 0 15px #dac8e7, 0 0 #714c9c;
+    transform: translateY(-2px);
+}
+.h:active {
+    transform: translateY(1px) scale(0.93);
+    box-shadow: 0 0 5px #8a2be2, 0 0 10px #0000ff, inset 0 0 10px rgba(255,255,255,0.5);
+    transition: all 0.05s ease;
+}
+
+
